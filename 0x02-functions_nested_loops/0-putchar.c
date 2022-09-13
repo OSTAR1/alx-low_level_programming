@@ -3,17 +3,18 @@
 /**
  * main - print _putchar
  *
- * Return: zero
+ * Return: 0
  */
 int main(void)
 {
-	char *main = "_putchar";
-
-	while (*main)
-	{
-		_putchar(*main);
-		main++;
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
 	return (0);
 }
