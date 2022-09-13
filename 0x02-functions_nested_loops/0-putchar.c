@@ -1,9 +1,17 @@
 #include "main.h
 "
-/**
- * main - Entry point
+/*
+ * File: _putchar
+ * Auth: Aniseti Sanya
  *
- * Return: Always 0 (Success)
+ */
+
+#include "main.h"
+
+/**
+ * main - entry point
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
