@@ -1,5 +1,3 @@
-#include "main.h
-"
 /*
  * File: _putchar
  * Auth: Aniseti Sanya
