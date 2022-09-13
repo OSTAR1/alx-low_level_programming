@@ -1,21 +1,19 @@
 /*
- * File: 4-isalpha.c
+ * File: 1-alphabet.c
  * Auth: Aniseti Sanya
  */
 
 #include "main.h"
 
 /**
- * _isalpha - Checks if a character is alphabetic.
- * @c: The character to be checked.
- *
- * Return: 1 if character is letter, lowercase or uppercase, 0 otherwise.
+ * print_alphabet - prints the alphabet in lowercase, followed by a new line.
  */
-int _isalpha(int c)
+void print_alphabet(void)
 {
-	if ((c >= 'a' && c <= 'z') ||
-	    (c >= 'A' && c <= 'Z'))
-		return (1);
-	else
-		return (0);
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
+
+	_putchar('\n');
 }
