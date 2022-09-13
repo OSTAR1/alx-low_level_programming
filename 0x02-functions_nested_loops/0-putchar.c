@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
@@ -10,7 +10,7 @@ int main(void)
 
 	while (*sh)
 	{
-		-putchar(*sh);
+		_putchar(*sh);
 		sh++;
 	}
 	_putchar('\n');
