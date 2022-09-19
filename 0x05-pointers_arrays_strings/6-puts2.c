@@ -1,18 +1,19 @@
+
 #include "main.h"
-#include <string.h>
 
 /**
- * puts2 - print evenly
- * @str: parameter
- *
- * Return: Always 0.
+ * puts2 - Prints one char out of two of a string.
+ * @str: The string containing characters.
  */
 void puts2(char *str)
 {
-	int i;
+	int index = 0, len = 0;
 
-	for (i = strlen(str) - 1; i >= 0; i += 2)
-	{
-		_putchar(str[i]);
-	}
+	while (str[index++])
+		len++;
+
+	for (index = 0; index < len; index += 2)
+		_putchar(str[index]);
+
+	_putchar('\n');
 }
