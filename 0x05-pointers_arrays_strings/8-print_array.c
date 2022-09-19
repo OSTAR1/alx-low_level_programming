@@ -1,13 +1,27 @@
-#include<stdio.h>
+#include "main.h"
+#include <stdio.h>
 
 /**
- * print_array - print integers
- * @a: pass by ref
- * @n: pass by value
+ * print_array - print array
+ *
+ * @a: pointer to an integer
+ * @n: number of elements of an array.
  */
 void print_array(int *a, int n)
 {
-	for (int in = 0 ; i < n ; i++)
-		printf("%d, ", a[i]);
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%d", *(a + i));
+		if (i == (n - 1))
+		{
+			break;
+		}
+		else
+		{
+			printf(", ");
+		}
+	}
 	printf("\n");
 }
