@@ -7,7 +7,7 @@
  * @a: parameter one.
  * @n: parameter two.
  * Return: zero.
- * /
+ */
 void reverse_array(int *a, int n)
 {
 	int i;
