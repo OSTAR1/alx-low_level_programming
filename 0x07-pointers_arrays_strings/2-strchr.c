@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * _strchr - finding char in string
  * @s: pass by ref string
@@ -13,5 +15,7 @@ char *_strchr(char *s, char c)
 		if (s[i] == c)
 			return (s + i);
 	}
+	if (s[i] == c)
+		return (s + i);
 	return (NULL);
 }
