@@ -1,7 +1,7 @@
 /**
  * _strlen_recursion - length of a string
  * @s: input string
- * Return: 0
+ * Return: nothing
  */
 int _strlen_recursion(char *s);
 {
