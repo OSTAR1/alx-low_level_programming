@@ -1,9 +1,9 @@
 /**
  * _strlen_recursion - length of a string
- * @s: input string
+ * @s: iput string
  * Return: nothing
  */
-int _strlen_recursion(char *s);
+int _strlen_recursion(char *s)
 {
 	if (!*s)
 		return (0);
