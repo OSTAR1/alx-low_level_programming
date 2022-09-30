@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gcc -c -wall -wextra *.c && ar -rcs libmy.a *o
