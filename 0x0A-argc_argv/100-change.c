@@ -1,46 +1,50 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
- * main - print the minimum number of coins to make change.
- *
- * @argc: argument counter.
- * @argv: argument vector.
- *
- * Return: return 1 if error, else return 0.
+ * main - A proogram that prints the minimum number of coins to
+ * make change for an amount of money
+ * @argc: The arguements' counter
+ * @argv: The argument's values
+ * Return: 1 if the number of arguments passed is not exactly
+ * or 0 in otherwise
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int change, num;
+	int amount, coins = 0;
 
-	change = 0;
 	if (argc == 2)
 	{
-		num = atoi(argv[1]);
-		if (num > 0)
+		amount = atoi(argv[1]);
+		if (amount < 0)
 		{
-			for (; num >= 25; change++)
-			{
-				num = num - 25;
-			}
-			for (; num >= 10; change++)
-			{
-				num = num - 10;
-			}
-			for (; num >= 5; change++)
-			{
-				num = num - 5;
-			}
-			for (; num >= 2; change++)
-			{
-				num = num - 2;
-			}
-			for (; num >= 1; change++)
-			{
-				num = num - 1;
-			}
+			printf("%d\n", 0);
+			return (0);
 		}
-		printf("%d\n", change);
+		if (amount % 25 >= 0)
+		{
+			coins += amount / 25;
+			amount = amount % 25;
+		}
+		if (amount % 10 >= 0)
+		{
+			coins += amount / 10;
+			amount = amount % 10;
+		}
+		if (amount % 5 >= 0)
+		{
+			coins += amount / 5;
+			amount = amount % 5;
+		}
+		if (amount % 2 >= 0)
+		{
+			coins += amount / 2;
+			amount = amount % 2;
+		}
+		if (amount % 1 >= 0)
+			coins += amount;
+		printf("%d\n", coins);
 		return (0);
 	}
 	else
