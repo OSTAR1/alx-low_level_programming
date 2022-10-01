@@ -6,4 +6,3 @@ echo "write a commit message \n"
 read cmt
 git commit -m "$cmt"
 git push
-
