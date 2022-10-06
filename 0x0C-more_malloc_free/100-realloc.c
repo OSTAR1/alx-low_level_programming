@@ -8,7 +8,6 @@
  * @ptr: pointer to the previous allocated memory.
  * @old_size: old size of previous memory.
  * @new_size: new size of memory block.
- *
  * Return: a pointer to the newly aloocated memory.
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
