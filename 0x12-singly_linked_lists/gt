@@ -1,0 +1,7 @@
+eck=$(ls -a | grep .git)
+#if [ $check = ".git" ]; then
+git add .
+echo "write a commit message \n"
+read cmt
+git commit -m "$cmt"
+git push
